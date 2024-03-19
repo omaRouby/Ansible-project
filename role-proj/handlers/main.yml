@@ -1,0 +1,11 @@
+---
+# handlers file for role-proj
+- name: sendfiles
+  copy:
+    src: files
+    dest: /home/tabana
+
+- name: printhi
+  file:
+    path: /home/tabana/hifile
+    state: touch
